@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="shortcut icon" href="./css/favicon.png">
+    <title>jobsNET</title>
+</head>
+<body>
+    
+<div>
+    <h1 id="título">banco de currículos</h1>
+    <h2 id="subtítulo">a jobsNET é especialista em recrutamento e seleção de profissionais nas mais diversas áreas e foi projetada para fornecer aos candidatos que estão a procura de um emprego, a tecnologia mais recente para ajudá-lo a encontrar a carreira perfeita para você.</h2>
+    <br>
+</div>
+
+<form>
+    <fieldset class="grupo">
+        <p id="subsubtítulo">Complete o formulário abaixo com suas informações:</p>
+        <p><strong>Identificação</strong></p>
+        
+        <div class="campo1">
+        <div class="campo">
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" id="nome" size="30" required>
+        </div>
+
+        <div class="campo">
+            <label for="profissão">Profissão</label>
+            <input type="text" name="profissão" id="profissão" required>
+        </div>
+
+        <div class="campo">
+            <label for="profissão">Cargo Pretendido</label>
+            <input type="text" name="cargo" id="cargo" required>
+        </div>
+
+        <div class="campo">
+            <label for="data de nascimento">Data de Nascimento</label>
+            <input type="date" name="data de nascimento" id="data de nascimento" required> 
+        </div>
+
+        <div class="campo">
+            <label for="estado civil">Estado Civil</label>
+            <select id="estado civil">
+                <option selected disabled value="">Selecione</option>
+                <option>Solteiro(a)</option>
+                <option>Casado(a)</option>
+                <option>Viúvo(a)</option>
+                <option>Divorciado(a)</option>
+                <option>Separado(a)</option>
+                <option>União Estável</option>
+                <option>Outros(a)</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="gênero">Gênero</label>
+            <select id="gênero">
+                <option selected disabled value="">Selecione</option>
+                <option>Feminino Cis</option>
+                <option>Masculino Cis</option>
+                <option>Feminino Trans</option>
+                <option>Masculino Trans</option>
+                <option>Não binário</option>
+                <option>Prefiro não dizer</option>
+            </select>
+        </div>
+    </div>
+    </fieldset>
+
+    <fieldset class="grupo">
+        <p><strong>Endereço</strong></p>
+        <div class="campo2">
+        <div class="campo">
+            <label for="cep">CEP</label>
+            <input type="text" name="cep" id="cep" required> 
+        </div>
+    
+        <div class="campo">
+            <label for="endereço">Endereço</label>
+            <input type="text" name="endereço" id="endereço" size="30" required>
+        </div>
+
+        <div class="campo">
+            <label for="bairro">Número</label>
+            <input type="text" name="número" id="número" size="5" required>
+        </div>
+
+        <div class="campo">
+            <label for="bairro">Bairro</label>
+            <input type="text" name="bairro" id="bairro" required>
+        </div>
+
+        <div class="campo">
+            <label for="cidade">Cidade</label>
+            <input type="text" name="cidade" id="cidade" size="15" required>
+        </div>
+
+        <div class="campo">
+            <label for="cidade">Estado</label>
+            <input type="text" name="estado" id="estado" size="2" required>
+        </div>
+    </div>
+    </fieldset>
+
+    <fieldset class="grupo">
+        <p><strong>Contato</strong></p>
+    <div class="campo3">
+        <div class="campo">
+            <label for="celular">Celular</label>
+            <input type="text" name="celular" id="celular" required>
+        </div>
+
+        <div class="campo">
+            <label for="telefone">Telefone Residencial</label>
+            <input type="text" name="telefone" id="telefone">
+        </div>
+
+        <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" size="35" required>
+        </div>
+    </div>
+    </fieldset>
+
+    <fieldset class="grupo">
+        <p><strong>Documentos</strong></p>
+    <div class="campo4">
+        <div class="campo">
+            <label for="rg">RG</label>
+            <input type="text" name="rg" id="rg">
+        </div>
+
+        <div class="campo" id="errocampoCPF">
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf" id="cpf" required>
+            <span id="erroCPF" style="display: none;" role="alert">CPF inválido!</span>
+        </div>
+
+        <div class="campo">
+            <label for="habilitação">Habilitação</label>
+            <select id="habilitação">
+                <option selected disabled value="">Selecione</option>
+                <option>CNH tipo A</option>
+                <option>CNH tipo B</option>
+                <option>CNH tipo C</option>
+                <option>CNH tipo D</option>
+                <option>CNH tipo E</option>
+                <option>Possuo mais de um tipo de habilitação</option>
+                <option>Não possuo habilitação</option>
+            </select>
+        </div>
+    </div>
+    </fieldset>
+
+    <button class="botão" type="submit" onsubmit="">Concluído</button>
+
+</form>
+</body>
+<script = src="./script.js"></script>
+</html>

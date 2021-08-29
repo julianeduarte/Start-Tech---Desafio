@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#título{
+    font-family: 'Glory', sans-serif;
+    color: #b44b69;
+    margin-left: 0%;
+    text-align: center;
+    padding: 10px;
+}
+
+#subtítulo{
+    font-family: 'Glory', sans-serif;
+    color: #b44b69;
+    margin-left: 0%;
+    text-align: center;
+    padding: 2px;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+#subsubtítulo{
+    font-family: 'Glory', sans-serif;
+    color: #858877;
+    margin-bottom: 1%;
+}
+
+
+fieldset {
+    border: 0;
+}
+
+body {
+    background-color: #f2eee9;
+    font-family: 'Glory', sans-serif;
+    font-size: 1em;
+    color: #858877;
+    text-align: center;
+    margin-top: 2%;
+    justify-content: center;
+    
+}
+
+input, select, button {
+    border-radius: 10px;
+}
+
+.campo {
+    margin-bottom: 1.3em;
+}
+
+.campo1 {
+    display: flex; 
+    justify-content: center;
+}
+
+.campo2 {
+    display: flex; 
+    justify-content: center;
+}
+
+.campo3 {
+    display: flex; 
+    justify-content: center;
+}
+
+.campo4 {
+    display: flex; 
+    justify-content: center;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+    color: #858877;
+    display: block;
+    text-align: center;
+}
+
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select {
+    padding: 0.4em;
+    border: none;
+    display: block;
+}
+
+.campo select option{
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus {
+    background: #f2eee9;
+}
+
+.botão {
+    font-family: 'Glory', sans-serif;
+    font-size: 1.4em;
+    background: #858877;
+    border: 0;
+    margin-bottom: 1em;
+    color: #f2eee9;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.botão:hover {
+    background: #b44b69;
+    color: #f2eee9;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: none;
+}
