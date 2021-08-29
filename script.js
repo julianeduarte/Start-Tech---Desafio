@@ -97,3 +97,25 @@ function validacaoCPF() {
 
 document.getElementById('cpf')
         .addEventListener('focusout', validacaoCPF);
+
+//usuário
+        const express = require('express');
+        const mongoose = require('mongoose');
+        const swaggerUI = require('swagger-ui-express');
+        const swaggerDocs = require('./swagger.json');
+        const app = express();
+        const cors = require('cors')
+        
+        
+        mongoose.connect('mongodb+srv://aleatorio9877:010203090807@cluster0.nnaq5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+            useNewUrlParser: true,
+            useCreateIndex: true
+        });
+
+app.use(cors());
+app.use(express.json());
+app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
+app.use(routes);
+app.listen('7777777', () => {
+    console.log('rodando na porta 7777777');
+});

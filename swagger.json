@@ -1,0 +1,116 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "BANCO DE CURRÍCULOS",
+        "description": "API Rest com a funcionalidade de cadastro de candidatos armazenando em um banco de dados.",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "host": "bancodecurriculosjobsnet.netlify.app",
+            "basePath": "/"
+        }
+    
+    ],
+    "paths": {
+        "/registro": {
+            "post": {
+                "summary": "cadastro do usuário",
+                "description": "recebe o cadastro do usuário por meio dos dados preenchidos",
+                "tags": [
+                    "candidato"
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "nome": {
+                                        "type": "string"
+                                    },
+                                    "profissão": {
+                                        "type": "string"
+                                    },
+                                    "cargo": {
+                                        "type": "number"
+                                    },
+                                    
+                                    "datadenascimento": {
+                                        "type": "date"
+                                    },
+                                    "estadocivil": {
+                                        "type": "string"
+                                    },
+                                    "gênero": {
+                                        "type": "string"
+                                    },
+                                    "cep": {
+                                        "type": "string"
+                                    },
+                                    "endereço": {
+                                        "type": "string"
+                                    },
+                                    "número": {
+                                        "type": "string"
+                                    },
+                                    "bairro": {
+                                        "type": "string"
+                                    },
+                                    "cidade": {
+                                        "type": "string"
+                                    },
+                                    "estado": {
+                                        "type": "string"
+                                    },
+                                    "celular": {
+                                        "type": "string"
+                                    },
+                                    "telefone": {
+                                        "type": "string"
+                                    },
+                                    "email": {
+                                        "type": "string"
+                                    },
+                                    "rg": {
+                                        "type": "string"
+                                    },
+                                    "cpf": {
+                                        "type": "string"
+                                    },
+
+                                    "habilitação": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "examples": {
+                                "meu cadástro": {
+                                    "value": {
+                                        "nome": "Juliane",
+                                        "profissão": "Qualquer uma",
+                                        "cargo": "Fullstack Dev",
+                                        "datadenascimento": "09/09/1999",
+                                        "estadocivil": "Solteiro",
+                                        "gênero": "Masculino",
+                                        "cep": "01001000",
+                                        "endereço": "Praça da Sé",
+                                        "número": "123",
+                                        "bairro": "Sé",
+                                        "cidade": "São Paulo",
+                                        "estado": "SP",
+                                        "celular": "11234567890",
+                                        "telefone": "1123456789",
+                                        "email": "ju@juliane.com",
+                                        "rg": "1111111111",
+                                        "cpf": "10000000000",
+                                        "habilitação": "A"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
