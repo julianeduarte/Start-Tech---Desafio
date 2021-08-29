@@ -1,0 +1,15 @@
+{
+  "name": "clear",
+  "version": "1.0.0",
+  "description": "Desafio #1: Banco de Currículos (Programa Start Tech - Gama Academy)",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "start-tech-desafio"
+  },
+  "author": "",
+  "license": "ISC"
+}
